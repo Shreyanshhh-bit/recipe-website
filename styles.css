@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro, .recipe {
+    text-align: center;
+    padding: 25px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 250px;
+    border-radius: 12px;
+}
+
+ul, ol {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+.home {
+    background-color: #fff59d; /* light yellow */
+}
+
+.home header, .home footer {
+    background-color: #fbc02d;
+}
+
+.home .card {
+    border: 2px solid #fbc02d;
+}
+
+.about {
+    background-color: #ffe0b2;
+}
+
+.about header, .about footer {
+    background-color: #fb8c00;
+}
+
+.pasta {
+    background-color: #fff8e1;
+    color: #333;
+}
+
+.pasta header, .pasta footer {
+    background-color: #ffb300;
+}
+
+.pasta img {
+    border: 4px solid #ffb300;
+}
+
+.pizza {
+    background-color: #ffebee;
+}
+
+.pizza header, .pizza footer {
+    background-color: #d32f2f;
+}
+
+.pizza img {
+    border: 4px dashed #d32f2f;
+}
+
+.burger {
+    background-color: #212121;
+    color: white;
+}
+
+.burger header, .burger footer {
+    background-color: #000;
+}
+
+.burger img {
+    border: 3px solid gold;
+}
+
+.cake {
+    background-color: #fce4ec;
+}
+
+.cake header, .cake footer {
+    background-color: #ec407a;
+}
+
+.cake img {
+    border: 4px dotted #ec407a;
+}
+
+.salad {
+    background-color: #e8f5e9;
+}
+
+.salad header, .salad footer {
+    background-color: #2e7d32;
+}
+
+.salad img {
+    border: 4px solid #2e7d32;
+}
+
+@media (max-width: 600px) {
+    .recipes {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+}
